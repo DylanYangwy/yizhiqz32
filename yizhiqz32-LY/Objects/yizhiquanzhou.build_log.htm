@@ -1,0 +1,118 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 0 0, 0, LIC=JL2Y8-39KEQ-4S2Y4-FWZCI-0XQRN-2CUAJ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.23
+Toolchain Path:  D:\Program Files (x86)\keilarm\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+H:\实验室\程序\移植泉州3-LY\yizhiquanzhou.uvprojx
+Project File Date:  05/13/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'D:\Program Files (x86)\keilarm\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+compiling main.c...
+User\main.c(78): warning:  #177-D: variable "data"  was declared but never referenced
+  	unsigned int data=0x12345678;
+User\main.c(79): warning:  #177-D: variable "data_char"  was declared but never referenced
+  	unsigned char data_char[4];
+User\main.c(80): warning:  #177-D: variable "num"  was declared but never referenced
+  	int num,num1;
+User\main.c(80): warning:  #177-D: variable "num1"  was declared but never referenced
+  	int num,num1;
+User\main.c: 4 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling misc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling bsp_SysTick.c...
+compiling wdt.c...
+compiling bsp_16jidianqi.c...
+Quanzhou\jidianqi\bsp_16jidianqi.c(247): warning:  #177-D: variable "RecArray"  was declared but never referenced
+  	U8 auchMsg[8],SendArray[8],RecArray[8];
+Quanzhou\jidianqi\bsp_16jidianqi.c(248): warning:  #177-D: variable "jdqCheck"  was declared but never referenced
+  	U8 Count,jdqCheck,waitTime;
+Quanzhou\jidianqi\bsp_16jidianqi.c: 2 warnings, 0 errors
+compiling bsp_bianpingqi.c...
+Quanzhou\bianpingqi\bsp_bianpingqi.c(346): warning:  #550-D: variable "previous_stage"  was set but never used
+  	unsigned int previous_stage = 0;
+Quanzhou\bianpingqi\bsp_bianpingqi.c: 1 warning, 0 errors
+compiling delay.c...
+compiling encoder1.c...
+Quanzhou\bianmaqi\encoder1.c(150): warning:  #177-D: variable "bb"  was declared but never referenced
+  {unsigned char bb;
+Quanzhou\bianmaqi\encoder1.c(151): warning:  #177-D: variable "i"  was declared but never referenced
+  	int i;
+Quanzhou\bianmaqi\encoder1.c(279): warning:  #177-D: variable "jj"  was declared but never referenced
+  	unsigned int jj;//,signal;,zushu //友峰去除组数
+Quanzhou\bianmaqi\encoder1.c(280): warning:  #177-D: variable "error_times"  was declared but never referenced
+  	static unsigned int error_times=0;
+Quanzhou\bianmaqi\encoder1.c(281): warning:  #177-D: variable "reset_enter_times"  was declared but never referenced
+  	static unsigned int reset_enter_times=0;	//未使用
+Quanzhou\bianmaqi\encoder1.c(282): warning:  #177-D: variable "speedChangeCnt"  was declared but never referenced
+  	static unsigned int speedChangeCnt[2][7]={1};
+Quanzhou\bianmaqi\encoder1.c(393): warning:  #940-D: missing return statement at end of non-void function "KeyBoard" 
+  }
+Quanzhou\bianmaqi\encoder1.c: 7 warnings, 0 errors
+compiling communication.c...
+compiling bsp_usartx.c...
+Quanzhou\bsp_usart\bsp_usartx.c(276): warning:  #177-D: variable "SendArray"  was declared but never referenced
+  		u8 SendArray[25] = {0};
+Quanzhou\bsp_usart\bsp_usartx.c(278): warning:  #177-D: variable "read_bit_num"  was declared but never referenced
+  		int read_bit_num = 0;
+Quanzhou\bsp_usart\bsp_usartx.c(279): warning:  #177-D: variable "write_word_num"  was declared but never referenced
+  		int write_word_num = 0;
+Quanzhou\bsp_usart\bsp_usartx.c(280): warning:  #177-D: variable "write_bit_num"  was declared but never referenced
+  		int write_bit_num = 0;
+Quanzhou\bsp_usart\bsp_usartx.c(281): warning:  #177-D: variable "read_word_num"  was declared but never referenced
+  		int read_word_num = 0;
+Quanzhou\bsp_usart\bsp_usartx.c(284): warning:  #177-D: variable "Count_2"  was declared but never referenced
+  		int Count_2 = 0;	//仅读取FLASH中记录的变量的时候使用
+Quanzhou\bsp_usart\bsp_usartx.c(285): warning:  #177-D: variable "read_memory_status"  was declared but never referenced
+  		static int read_memory_status = 0;
+Quanzhou\bsp_usart\bsp_usartx.c: 7 warnings, 0 errors
+compiling appBase.c...
+compiling 2440lib.c...
+compiling init.c...
+init\init.c(224): warning:  #177-D: variable "tmp"  was declared but never referenced
+  	DWORD tmp;
+init\init.c: 1 warning, 0 errors
+compiling qz_system.c...
+compiling zhongduan.c...
+linking...
+Program Size: Code=4156 RO-data=336 RW-data=80 ZI-data=9592  
+FromELF: creating hex file...
+".\Objects\yizhiquanzhou.axf" - 0 Error(s), 22 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  D:\Program Files (x86)\keilarm\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:20
+</pre>
+</body>
+</html>

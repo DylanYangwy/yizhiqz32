@@ -1,0 +1,15 @@
+重要便令说明：
+
+在\inc\systemconf.h声明了如下结构体作为一体机内部位，内部字使用。
+typedef struct 
+{
+	unsigned char KeepBit[1*2048];		//内部位（掉电保护）
+	INT16U KeepWord[1*2048/2];		//内部字（掉电保护）
+	unsigned char Bit[1*2048];			//内部位
+	INT16U Word[1*2048/2];				//内部字
+}INTERALMEMORY;
+定义的全局结构体如下：INTERALMEMORY  g_InteralMemory;
+用户可根据需要使用g_InteralMemory.Bit[]、g_InteralMemory.Word[]、g_InteralMemory.KeepBit[]
+和g_InteralMemory.KeepWord[]。
+编辑组态画面时，对于的地址分别是：P_B、P_W、P_KB和P_KW。
+g_InteralMemory.KeepBit[]和g_InteralMemory.KeepWord[]作为系统掉电保存数据使用。
